@@ -36,3 +36,7 @@ LOCAL_MODULE_STEM := android.hardware.power-service.rc
 LOCAL_SRC_FILES := android.hardware.power-service.rc
 include $(BUILD_PREBUILT)
 
+ifneq ($(TARGET_TAP_TO_WAKE_NODE),)
+    LOCAL_CFLAGS += -DTAP_TO_WAKE_NODE=\"$(TARGET_TAP_TO_WAKE_NODE)\"
+endif
+
