@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+$(call inherit-product, $(LOCAL_PATH)/utils.mk)
+
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom/sm8150 \
     kernel/xiaomi/phoenix
