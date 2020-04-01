@@ -186,7 +186,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer@2.0.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0 \
-    vendor.qti.hardware.display.mapper@4.0.vendor
+    vendor.qti.hardware.display.mapper@4.0.vendor\
     vendor.qti.hardware.display.mapper@4.0.vendor \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
@@ -491,6 +491,10 @@ PRODUCT_PACKAGES += \
 # Soter
 PRODUCT_PACKAGES += \
     libhwbinder.vendor
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service.phoenix
 
 # Telephony
 PRODUCT_PACKAGES += \
