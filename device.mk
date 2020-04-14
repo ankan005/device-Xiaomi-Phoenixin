@@ -241,5 +241,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# GCam Go
+PRODUCT_PACKAGES += \
+    GCam
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
