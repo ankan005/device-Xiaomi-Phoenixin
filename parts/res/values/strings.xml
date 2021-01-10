@@ -103,4 +103,14 @@
         <!-- FPS Info -->
     <string name="fps_info_title">FPS Info Overlay</string>
     <string name="fps_info_summary">Show overlay with current frames per second</string>
+    <string name="thermal_youtube">YouTube</string>
+    <string name="thermal_streaming">Streaming</string>
+
+    <!-- Refresh Rates -->
+    <string name="fps_title">Refresh rate per app</string>
+    <string name="fps_summary">Add a custom refresh rate for individual apps</string>
+    <string name="fps_120">120 hz</string>
+    <string name="fps_90">90 hz</string>
+    <string name="fps_60">60 hz</string>
+    <string name="fps_30">30 hz</string>
 </resources>

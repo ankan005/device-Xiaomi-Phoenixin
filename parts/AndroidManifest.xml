@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lineageos.settings"
-    android:versionCode="3"
-    android:versionName="3.0"
+    android:versionCode="2"
+    android:versionName="2.0"
     android:sharedUserId="android.uid.system">
 
     <uses-permission android:name="android.permission.DEVICE_POWER" />
@@ -13,6 +13,10 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="30"/>
 
     <application
         android:allowBackup="true"
@@ -113,40 +117,27 @@
             android:permission="ThermalService">
         </service>
 
-        <service
-            android:name=".dirac.DiracTileService"
-            android:icon="@drawable/ic_headphone"
-            android:label="@string/dirac_qs_tile_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+        <activity
+            android:name=".fps.FPSActivity"
+            android:label="@string/fps_title"
+            android:theme="@style/Theme.Main">
             <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
-        </service>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/fps_summary" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="1" />
+        </activity>
 
         <service
-            android:name=".RefreshRateTileService"
-            android:icon="@drawable/ic_qs_refresh_rate"
-            android:label="@string/refresh_rate_tile_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>   
-        <service
-            android:name=".FPSInfoService"
-            android:exported="false">
-        </service>  
-        <service
-            android:name=".FPSTileService"
-            android:icon="@drawable/ic_fps_info"
-            android:label="@string/fps_info_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
+            android:name=".fps.FPSService"
+            android:permission="FPService">
         </service>
-
     </application>
 </manifest>
-
