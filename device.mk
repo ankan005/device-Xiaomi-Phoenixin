@@ -101,7 +101,8 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.qcom.rc
+    init.qcom.rc \
+    init.device.rc
 
 # IPACM
 PRODUCT_PACKAGES += \
