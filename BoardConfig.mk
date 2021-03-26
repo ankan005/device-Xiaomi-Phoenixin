@@ -96,7 +96,7 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_CONFIG := phoenix_defconfig
   TARGET_KERNEL_CLANG_COMPILE := true
   TARGET_KERNEL_SOURCE := kernel/xiaomi/phoenix
-  TARGET_KERNEL_CLANG_VERSION := proton
+#  TARGET_KERNEL_CLANG_VERSION := proton
 endif
 
 # Platform
