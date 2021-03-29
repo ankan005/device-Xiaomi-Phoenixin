@@ -73,6 +73,9 @@ PRODUCT_PACKAGES += \
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
