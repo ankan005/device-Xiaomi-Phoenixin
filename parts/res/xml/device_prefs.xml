@@ -36,7 +36,6 @@
             android:entries="@array/device_power_save_refresh_rates"
             android:entryValues="@array/device_power_save_refresh_rates_val"
             android:defaultValue="3" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
