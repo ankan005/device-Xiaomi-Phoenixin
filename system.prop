@@ -79,11 +79,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.sdha_apps_bg_max=64 \
     ro.config.sdha_apps_bg_min=8
 
-
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
-    debug.hwui.renderer=skiavk
-
-# Graphics
-PRODUCT_PRODUCT_PROPERTIES += \
-    debug.sdm.support_writeback=0
+    debug.hwui.renderer=skiavk \
+    debug.sdm.support_writeback=0 \
+    persist.sys.sf.color_mode=0 \ 
+    persist.sys.sf.color_saturation=1.0 \
+    persist.sys.sf.native_mode=0 \ 
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno \
+     ro.opengles.version=196610 \ 
+    debug.egl.hw=0 \
+    vendor.display.enable_optimize_refresh=1
