@@ -83,3 +83,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=skiavk
+
+# Graphics
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sdm.support_writeback=0
