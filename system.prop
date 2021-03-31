@@ -94,3 +94,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
      ro.opengles.version=196610 \ 
     debug.egl.hw=0 \
     vendor.display.enable_optimize_refresh=1
+
+# Fling Velocity
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.min.fling_velocity=160 \
+    ro.max.fling_velocity=20000
