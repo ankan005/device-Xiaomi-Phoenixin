@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2020-2021 Wave-OS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_phoenix.mk
+    $(LOCAL_DIR)/wave_phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_phoenix-user \
-    lineage_phoenix-userdebug \
-    lineage_phoenix-eng
+    wave_phoenix-user \
+    wave_phoenix-userdebug \
+    wave_phoenix-eng

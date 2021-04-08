@@ -1,0 +1,18 @@
+[
+    {
+        "repository":  "xiaomi-sm6150/android_kernel_xiaomi_sm6150",
+        "target_path": "kernel/xiaomi/sm6150",
+        "remote"     : "github",
+        "branch"     : "backup-phoenix"
+    },
+    {
+        "repository":  "device_xiaomi_sm6150-common",
+        "target_path": "device/xiaomi/sm6150-common"
+    },
+    {
+        "repository":  "xiaomi-sm6150/android_vendor_xiaomi",
+        "target_path": "vendor/xiaomi",
+        "remote"     : "github",
+        "branch"     : "lineage-18.1-phoenix"
+    }
+]

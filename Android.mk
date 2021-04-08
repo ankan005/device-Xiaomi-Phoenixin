@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2020-2021 Wave-OS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
