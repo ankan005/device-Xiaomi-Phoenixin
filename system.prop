@@ -123,3 +123,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.log_stats=true \
     ro.lmk.use_minfree_levels=true \
     ro.lmk.log_stats=true
+
+# Dolby Atmos
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.feature.dolby_enable=true \ 
+vendor.audio.dolby.ds2.enabled=false \
+vendor.audio.dolby.ds2.hardbypass=false

@@ -79,6 +79,17 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
+# Dolby Atmos
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/config-com.dolby.daxappui.xml:system/etc/sysconfig/config-com.dolby.daxappui.xml \
+    $(LOCAL_PATH)/configs/config-com.dolby.service.xml:system/etc/sysconfig/config-com.dolby.service.xml \
+    $(LOCAL_PATH)/configs/permissions/dolby_dax.xml:system/etc/permissions/dolby_dax.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-com.dolby.service.xml:system/etc/permissions/privapp-com.dolby.service.xml \
+    $(LOCAL_PATH)/configs/media_codecs_dolby_audio.xml::$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
+
+PRODUCT_PACKAGES += \
+    DaxUI \
+    daxService
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
