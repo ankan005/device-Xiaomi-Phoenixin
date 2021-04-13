@@ -1,0 +1,8 @@
+[
+   {
+	"remote"       : "priv",
+	"repository"   : "android_packages_apps_NusantaraPapers",
+	"target_path"  : "packages/apps/NusantaraPapers",
+	"branch"       : "11"
+    }
+]

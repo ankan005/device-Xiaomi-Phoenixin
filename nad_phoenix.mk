@@ -14,9 +14,12 @@ $(call inherit-product, device/xiaomi/phoenix/device.mk)
 # Inherit some common WaveOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 
-$(call inherit-product, vendor/wave/configs/common.mk)
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
-PRODUCT_NAME := wave_phoenix
+PRODUCT_NAME := nad_phoenix
+TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
+NAD_BUILD_TYPE := OFFICIAL
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30
