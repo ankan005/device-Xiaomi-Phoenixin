@@ -18,3 +18,5 @@ PRODUCT_MANUFACTURER := Xiaomi
 PEX_BUILD_TYPE := OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
