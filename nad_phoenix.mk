@@ -16,6 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 # Device identifier. This must come after all inclusions.
+NAD_BUILD_TYPE := OFFICIAL
 PRODUCT_NAME := nad_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Redmi
