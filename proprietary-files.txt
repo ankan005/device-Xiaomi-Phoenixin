@@ -52,28 +52,6 @@ system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
 -system_ext/lib64/com.quicinc.cne.constants@2.0.so
 -system_ext/lib64/com.quicinc.cne.constants@2.1.so
 
-# Dolby Atmos
-vendor/lib/libdapparamstorage.so
-vendor/lib/libstagefright_soft_ddpdec.so
-vendor/lib/libstagefrightdolby.so
-vendor/lib/soundfx/libatmos.so
-vendor/lib/soundfx/libswvqe.so
-vendor/lib/vendor.dolby.hardware.dms@1.0.so
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/libstagefrightdolby.so
-vendor/lib64/soundfx/libatmos.so
-vendor/lib64/soundfx/libswvqe.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0.so
-vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
-vendor/etc/dolby/dap-default.xml
-vendor/etc/dolby/dap-default.orig
-vendor/etc/dolby/dap-default.bass_96
-vendor/etc/dolby/dap-default.bass_192
-vendor/etc/dolby/dap-default.bass_144
-vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service
-
 # FM
 lib64/fm_helium.so
 lib64/libfm-hci.so
