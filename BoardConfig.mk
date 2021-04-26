@@ -221,4 +221,3 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 # Inherit from the proprietary version
 -include vendor/xiaomi/phoenix/BoardConfigVendor.mk
 
--include vendor/xiaomi/miuicamera/config.mk
