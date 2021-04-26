@@ -26,14 +26,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 #Gapps & Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
 USE_GAPPS := true
 
-# Maintainer Properties
-EVO_BUILD_TYPE := OFFICIAL
-EVO_DONATE_URL := https://www.paypal.me/chiru2000
-EVO_MAINTAINER := CHIRANTH
+PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210405.005 7181113 release-keys"
 
-BUILD_FINGERPRINT := POCO/phoenixin/phoenixin:11/RKQ1.200826.002/V12.1.3.0.RGHINXM:user/release-keys
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
