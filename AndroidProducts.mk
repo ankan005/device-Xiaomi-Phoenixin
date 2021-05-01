@@ -5,4 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_phoenix.mk
+    $(LOCAL_DIR)/p404_phoenix.mk
+
+COMMON_LUNCH_CHOICES := \
+    p404_phoenix-userdebug

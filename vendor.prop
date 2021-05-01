@@ -103,6 +103,7 @@ vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.disable_zsl_mode=1
+vendor.camera.aux.packagelist=org.codeaurora.snapcam
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
@@ -112,6 +113,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Display post-processing
 ro.vendor.display.sensortype=2
+persist.vendor.color.matrix=2
 
 # DPM
 persist.vendor.dpm.loglevel=0
@@ -170,6 +172,7 @@ vendor.media.target.version=2
 # Netmgr
 persist.vendor.data.iwlan.enable=true
 ro.telephony.iwlan_operation_mode=legacy
+persist.vendor.data.mode=concurrent
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so

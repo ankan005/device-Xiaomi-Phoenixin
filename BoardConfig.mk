@@ -119,6 +119,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_phoenix
 TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL_OFFSET := 0x00008000
@@ -205,11 +206,12 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2020-12-01
 
 # Sepolicy
-TARGET_SEPOLICY_DIR := msmsteppe
-include device/qcom/sepolicy_vndr/SEPolicy.mk
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+#TARGET_SEPOLICY_DIR := msmsteppe
+#SELINUX_IGNORE_NEVERALLOWS := true
+#include device/qcom/sepolicy_vndr/SEPolicy.mk
+#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+#BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)

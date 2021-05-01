@@ -1,0 +1,7 @@
+[
+ "repository":"android_hardware_qcom_audio",
+      "target_path":"hardware/qcom/audio",
+      "remote":"p404",
+      "branch":"rippa-R-8150"
+   }
+]
