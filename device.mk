@@ -4,6 +4,25 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+TARGET_BOARD_PLATFORM := sm6150
+TARGET_COMMON_QTI_COMPONENTS += \
+    av \
+    display \
+    perf
+
+PRODUCT_BOARD_PLATFORM := sm6150
+PRODUCT_USES_QCOM_HARDWARE := true
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/sm8150 \
+#    system/bt \
+    packages/apps/Bluetooth \
+    vendor/qcom/opensource/commonsys/system/bt \
+    $(LOCAL_PATH)
+
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -361,11 +380,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-p404
-
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.capabilityconfigstore@1.0
+    $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -416,7 +431,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+   android.hardware.power@1.3-service.xiaomi_sm6150
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -521,6 +536,12 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libhidlcache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlcache.so
+
+PRODUCT_PACKAGES += vndk_package
+
 
 # Vibrator
 PRODUCT_PACKAGES += \
