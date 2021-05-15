@@ -3,25 +3,11 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-TARGET_BOARD_PLATFORM := sm6150
-TARGET_COMMON_QTI_COMPONENTS += \
-    av \
-    bt \
-    display \
-    perf
-
-
-PRODUCT_BOARD_PLATFORM := sm6150
-PRODUCT_USES_QCOM_HARDWARE := true
-
-
-
-
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-PRODUCT_USES_QCOM_HARDWARE := true
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
