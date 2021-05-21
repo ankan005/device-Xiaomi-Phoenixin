@@ -8,7 +8,7 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 DEVICE_PATH := device/xiaomi/phoenix
-
+TARGET_NO_KERNEL := false
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -60,7 +60,7 @@ BOARD_SUPPORTS_QAHW := false
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 TARGET_PROVIDES_AUDIO_EXTNS := true
-USE_CUSTOM_AUDIO_POLICY := 1
+#USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
@@ -206,7 +206,7 @@ VENDOR_SECURITY_PATCH := 2021-03-01
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
-include device/qcom/sepolicy_vndr/SEPolicy.mk
+#include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor

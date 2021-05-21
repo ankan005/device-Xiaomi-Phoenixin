@@ -7,7 +7,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+#$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -25,6 +25,8 @@ BOARD_BUILD_PRODUCT_IMAGE := true
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
+PRODUCT_HARDWARE := sm6150
 
 # AAPT config
 PRODUCT_AAPT_CONFIG := normal
@@ -497,8 +499,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext \
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+ #   telephony-ext
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
