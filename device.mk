@@ -6,12 +6,18 @@
 
 $(call inherit-product, $(LOCAL_PATH)/utils.mk)
 
+#PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/kernel/89xx/kernel-headers
+
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom/sm8150 \
-    kernel/xiaomi/phoenix
+    vendor/qcom/opensource/data-ipa-cfg-mgr
 
-PRODUCT_BOARD_PLATFORM := sm6150
-PRODUCT_USES_QCOM_HARDWARE := true
+#PRODUCT_USES_QCOM_HARDWARE := true
+
+LOCAL_KERNEL := device/xiaomi/phoenix/prebuilt/kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
 
 # Source
 PRODUCT_HOST_PACKAGES += \
