@@ -414,11 +414,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.1.vendor \
     vendor.qti.hardware.perf@2.2.vendor
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service \
-    android.hardware.power-impl
-
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
